@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedRobot/LandBasedRobot.cpp
+LandBasedRobot.h
+/home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedRobot/LandBasedRobot.h
+
+/home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedRobot/LandBasedRobot.h
+iostream
+-
+string
+-
+
+/home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedTracked/landbasedtracked.cpp
+landbasedtracked.h
+/home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedTracked/landbasedtracked.h
+
+/home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedTracked/landbasedtracked.h
+string
+-
+iostream
+-
+../LandBasedRobot/LandBasedRobot.h
+/home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedRobot/LandBasedRobot.h
+
+/home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedWheeled/landbasedwheeled.h
+
+/home/prateek/Desktop/Exercises/Maze_Robot-master/main.cpp
+LandBasedWheeled/landbasedwheeled.h
+/home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedWheeled/landbasedwheeled.h
+LandBasedTracked/landbasedtracked.h
+/home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedTracked/landbasedtracked.h
+vector
+-
+memory
+-
+iostream
+-
+
