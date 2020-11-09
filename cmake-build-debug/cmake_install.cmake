@@ -1,4 +1,4 @@
-# Install script for directory: /home/prateek/Desktop/Exercises/Maze_Robot-master
+# Install script for directory: /home/amoghavarsha/CLionProjects/Maze_Robot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/prateek/Desktop/Exercises/Maze_Robot-master/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

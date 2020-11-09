@@ -49,13 +49,13 @@ int main(){
     //rwa3::LandBasedRobot base_robot("none",1,2);
 
     //--pointer to base class for dynamic binding
-//    std::shared_ptr<rwa3::LandBasedRobot> wheeled =
-//            std::make_shared<rwa3::LandBasedWheeled>("Husky",1,4);
-//
-//    std::vector<std::string> action_path_wheeled {"up","right","pickup","left","down",
-//                                                  "release"};
-//    FollowActionPath(wheeled,action_path_wheeled,"book");
-//    std::cout << "--------------------------------------------------------------------\n";
+    std::shared_ptr<rwa3::LandBasedRobot> wheeled =
+            std::make_shared<rwa3::LandBasedWheeled>("Husky",1,4);
+
+    std::vector<std::string> action_path_wheeled {"up","right","pickup","left","down",
+                                                  "release"};
+    FollowActionPath(wheeled,action_path_wheeled,"book");
+    std::cout << "--------------------------------------------------------------------\n";
 
     //--pointer to base class for dynamic binding
     std::shared_ptr<rwa3::LandBasedRobot> tracked =

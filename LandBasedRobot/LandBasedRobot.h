@@ -19,7 +19,7 @@
 
 
 #include <iostream>
-#include <string>
+
 
 
 namespace rwa3 {
@@ -43,14 +43,14 @@ namespace rwa3 {
          * @param int x_
          * @param int y_
          */
-        virtual void GoUp(int x_,int y_) = 0;
+        virtual void GoUp(int x,int y) = 0;
 
         /**
          * @brief Virtual is a member function which moves the robot down
          * @param int x_
          * @param int y_
          */
-        virtual void GoDown(int x_,int y_) = 0;
+        virtual void GoDown(int x,int y) = 0;
 
 
         /**
@@ -58,14 +58,14 @@ namespace rwa3 {
          * @param int x_
          * @param int y_
          */
-        virtual void TurnLeft(int x_,int y_) = 0;
+        virtual void TurnLeft(int x,int y) = 0;
 
         /**
          * @brief Virtual is a member function which moves the robot right
          * @param int x_
          * @param int y_
          */
-        virtual void TurnRight(int x_,int y_) = 0;
+        virtual void TurnRight(int x,int y) = 0;
 
         /**
          * @brief Virtual is a member function which picks up an object

@@ -63,10 +63,10 @@ RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prateek/Desktop/Exercises/Maze_Robot-master
+CMAKE_SOURCE_DIR = /home/amoghavarsha/CLionProjects/Maze_Robot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prateek/Desktop/Exercises/Maze_Robot-master/cmake-build-debug
+CMAKE_BINARY_DIR = /home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Maze_Robot.dir/depend.make
@@ -79,55 +79,55 @@ include CMakeFiles/Maze_Robot.dir/flags.make
 
 CMakeFiles/Maze_Robot.dir/main.cpp.o: CMakeFiles/Maze_Robot.dir/flags.make
 CMakeFiles/Maze_Robot.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prateek/Desktop/Exercises/Maze_Robot-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Maze_Robot.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Maze_Robot.dir/main.cpp.o -c /home/prateek/Desktop/Exercises/Maze_Robot-master/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Maze_Robot.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Maze_Robot.dir/main.cpp.o -c /home/amoghavarsha/CLionProjects/Maze_Robot/main.cpp
 
 CMakeFiles/Maze_Robot.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Maze_Robot.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prateek/Desktop/Exercises/Maze_Robot-master/main.cpp > CMakeFiles/Maze_Robot.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amoghavarsha/CLionProjects/Maze_Robot/main.cpp > CMakeFiles/Maze_Robot.dir/main.cpp.i
 
 CMakeFiles/Maze_Robot.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Maze_Robot.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prateek/Desktop/Exercises/Maze_Robot-master/main.cpp -o CMakeFiles/Maze_Robot.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amoghavarsha/CLionProjects/Maze_Robot/main.cpp -o CMakeFiles/Maze_Robot.dir/main.cpp.s
 
 CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.o: CMakeFiles/Maze_Robot.dir/flags.make
 CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.o: ../LandBasedRobot/LandBasedRobot.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prateek/Desktop/Exercises/Maze_Robot-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.o -c /home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedRobot/LandBasedRobot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.o -c /home/amoghavarsha/CLionProjects/Maze_Robot/LandBasedRobot/LandBasedRobot.cpp
 
 CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedRobot/LandBasedRobot.cpp > CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amoghavarsha/CLionProjects/Maze_Robot/LandBasedRobot/LandBasedRobot.cpp > CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.i
 
 CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedRobot/LandBasedRobot.cpp -o CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amoghavarsha/CLionProjects/Maze_Robot/LandBasedRobot/LandBasedRobot.cpp -o CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.s
 
 CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.o: CMakeFiles/Maze_Robot.dir/flags.make
 CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.o: ../LandBasedWheeled/landbasedwheeled.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prateek/Desktop/Exercises/Maze_Robot-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.o -c /home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedWheeled/landbasedwheeled.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.o -c /home/amoghavarsha/CLionProjects/Maze_Robot/LandBasedWheeled/landbasedwheeled.cpp
 
 CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedWheeled/landbasedwheeled.cpp > CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amoghavarsha/CLionProjects/Maze_Robot/LandBasedWheeled/landbasedwheeled.cpp > CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.i
 
 CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedWheeled/landbasedwheeled.cpp -o CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amoghavarsha/CLionProjects/Maze_Robot/LandBasedWheeled/landbasedwheeled.cpp -o CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.s
 
 CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.o: CMakeFiles/Maze_Robot.dir/flags.make
 CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.o: ../LandBasedTracked/landbasedtracked.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prateek/Desktop/Exercises/Maze_Robot-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.o -c /home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedTracked/landbasedtracked.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.o -c /home/amoghavarsha/CLionProjects/Maze_Robot/LandBasedTracked/landbasedtracked.cpp
 
 CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedTracked/landbasedtracked.cpp > CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amoghavarsha/CLionProjects/Maze_Robot/LandBasedTracked/landbasedtracked.cpp > CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.i
 
 CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prateek/Desktop/Exercises/Maze_Robot-master/LandBasedTracked/landbasedtracked.cpp -o CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amoghavarsha/CLionProjects/Maze_Robot/LandBasedTracked/landbasedtracked.cpp -o CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.s
 
 # Object files for target Maze_Robot
 Maze_Robot_OBJECTS = \
@@ -145,7 +145,7 @@ Maze_Robot: CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.o
 Maze_Robot: CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.o
 Maze_Robot: CMakeFiles/Maze_Robot.dir/build.make
 Maze_Robot: CMakeFiles/Maze_Robot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/prateek/Desktop/Exercises/Maze_Robot-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Maze_Robot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Maze_Robot"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Maze_Robot.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -158,6 +158,6 @@ CMakeFiles/Maze_Robot.dir/clean:
 .PHONY : CMakeFiles/Maze_Robot.dir/clean
 
 CMakeFiles/Maze_Robot.dir/depend:
-	cd /home/prateek/Desktop/Exercises/Maze_Robot-master/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prateek/Desktop/Exercises/Maze_Robot-master /home/prateek/Desktop/Exercises/Maze_Robot-master /home/prateek/Desktop/Exercises/Maze_Robot-master/cmake-build-debug /home/prateek/Desktop/Exercises/Maze_Robot-master/cmake-build-debug /home/prateek/Desktop/Exercises/Maze_Robot-master/cmake-build-debug/CMakeFiles/Maze_Robot.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amoghavarsha/CLionProjects/Maze_Robot /home/amoghavarsha/CLionProjects/Maze_Robot /home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug /home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug /home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug/CMakeFiles/Maze_Robot.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Maze_Robot.dir/depend
 

@@ -1,6 +1,6 @@
-/snap/clion/129/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/prateek/Desktop/Exercises/Maze_Robot-master
--- The C compiler identification is GNU 5.5.0
--- The CXX compiler identification is GNU 5.5.0
+/snap/clion/129/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -G "CodeBlocks - Unix Makefiles" /home/amoghavarsha/CLionProjects/Maze_Robot
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc - works
 -- Detecting C compiler ABI info
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/prateek/Desktop/Exercises/Maze_Robot-master/cmake-build-debug
+-- Build files have been written to: /home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug
