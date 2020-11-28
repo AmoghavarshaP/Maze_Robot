@@ -22,7 +22,7 @@
 #include "../LandBasedRobot/LandBasedRobot.h"
 
 
-namespace rwa3 {
+namespace fp {
     /**
      * @brief Derived class definition for LandBasedWheeled Robot
      * It contains its respective methods and attributes

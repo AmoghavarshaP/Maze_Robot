@@ -1,4 +1,4 @@
-/snap/clion/135/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -G "CodeBlocks - Unix Makefiles" /home/amoghavarsha/CLionProjects/FinalProjectNavigation
+/snap/clion/135/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -G "CodeBlocks - Unix Makefiles" /home/amoghavarsha/Desktop/FinalProject809Y/FinalProject
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/amoghavarsha/CLionProjects/FinalProjectNavigation/cmake-build-debug
+-- Build files have been written to: /home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/cmake-build-debug
