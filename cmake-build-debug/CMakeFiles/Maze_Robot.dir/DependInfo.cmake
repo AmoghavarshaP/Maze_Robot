@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/amoghavarsha/CLionProjects/Maze_Robot/LandBasedRobot/LandBasedRobot.cpp" "/home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug/CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.o"
-  "/home/amoghavarsha/CLionProjects/Maze_Robot/LandBasedTracked/landbasedtracked.cpp" "/home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug/CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.o"
-  "/home/amoghavarsha/CLionProjects/Maze_Robot/LandBasedWheeled/landbasedwheeled.cpp" "/home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug/CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.o"
-  "/home/amoghavarsha/CLionProjects/Maze_Robot/main.cpp" "/home/amoghavarsha/CLionProjects/Maze_Robot/cmake-build-debug/CMakeFiles/Maze_Robot.dir/main.cpp.o"
+  "/home/amoghavarsha/Desktop/Maze_Robot/LandBasedRobot/LandBasedRobot.cpp" "/home/amoghavarsha/Desktop/Maze_Robot/cmake-build-debug/CMakeFiles/Maze_Robot.dir/LandBasedRobot/LandBasedRobot.cpp.o"
+  "/home/amoghavarsha/Desktop/Maze_Robot/LandBasedTracked/landbasedtracked.cpp" "/home/amoghavarsha/Desktop/Maze_Robot/cmake-build-debug/CMakeFiles/Maze_Robot.dir/LandBasedTracked/landbasedtracked.cpp.o"
+  "/home/amoghavarsha/Desktop/Maze_Robot/LandBasedWheeled/landbasedwheeled.cpp" "/home/amoghavarsha/Desktop/Maze_Robot/cmake-build-debug/CMakeFiles/Maze_Robot.dir/LandBasedWheeled/landbasedwheeled.cpp.o"
+  "/home/amoghavarsha/Desktop/Maze_Robot/main.cpp" "/home/amoghavarsha/Desktop/Maze_Robot/cmake-build-debug/CMakeFiles/Maze_Robot.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
