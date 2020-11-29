@@ -38,25 +38,14 @@ namespace fp {
         //--Methods
 
     public:
-        virtual void GoUp(int x, int y) override ;
+        virtual char GetDirection() override;
 
-        virtual void GoDown(int x, int y) override ;
+        virtual void MoveForward() override;
 
-        virtual void TurnLeft(int x, int y) override ;
+        virtual void TurnLeft() override;
 
-        virtual void TurnRight(int x, int y) override ;
+        virtual void TurnRight() override;
 
-        virtual void PickUp(std::string) override;
-
-        virtual void Release(std::string) override;
-
-    public:
-        /**
-        * @brief Constructor of the class LandBasedWheeled
-        * @param string name
-        * @param int x
-        * @param int y
-        */
 
         LandBasedWheeled(std::string name, int x, int y): LandBasedRobot(name_, x_, y_){
             name =  name_;

@@ -32,27 +32,13 @@ namespace fp {
         std::shared_ptr<std::string> track_type_;/**Type of track mounted on the robot */
 
     public:
-        //--Methods prototypes
-        virtual void GoUp(int x, int y) override ;
+        virtual char GetDirection() override;
 
-        virtual void GoDown(int x,int y) override;
+        virtual void MoveForward() override;
 
-        virtual void TurnLeft(int x, int y) override;
+        virtual void TurnLeft() override;
 
-        virtual void TurnRight(int x ,int y) override;
-
-        virtual void PickUp(std::string) override;
-
-        virtual void Release(std::string) override;
-
-    public:
-
-        /**
-         * @brief Constructor of the class LandBasedTracked
-         * @param string name
-         * @param int x
-         * @param int y
-         */
+        virtual void TurnRight() override;
 
         LandBasedTracked(std::string name, int x, int y): LandBasedRobot(name_, x_, y_){
             name =  name_;
@@ -60,12 +46,6 @@ namespace fp {
             y = y_;
         }
 
-        /**
-        * @brief Destructor of the class LandBasedTracked which deletes the objects created before
-        * @param string name
-        * @param int x
-        * @param int y
-        */
 
         ~LandBasedTracked(){}
     };
