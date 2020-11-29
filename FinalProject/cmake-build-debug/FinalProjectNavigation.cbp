@@ -93,6 +93,12 @@
 		<Unit filename="/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/API/api.h">
 			<Option target="FinalProjectNavigation"/>
 		</Unit>
+		<Unit filename="/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Algorithmn/algorithmn.cpp">
+			<Option target="FinalProjectNavigation"/>
+		</Unit>
+		<Unit filename="/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Algorithmn/algorithmn.h">
+			<Option target="FinalProjectNavigation"/>
+		</Unit>
 		<Unit filename="/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/LandBasedRobot/LandBasedRobot.cpp">
 			<Option target="FinalProjectNavigation"/>
 		</Unit>
@@ -109,6 +115,12 @@
 			<Option target="FinalProjectNavigation"/>
 		</Unit>
 		<Unit filename="/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/LandBasedWheeled/landbasedwheeled.h">
+			<Option target="FinalProjectNavigation"/>
+		</Unit>
+		<Unit filename="/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Maze/maze.cpp">
+			<Option target="FinalProjectNavigation"/>
+		</Unit>
+		<Unit filename="/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Maze/maze.h">
 			<Option target="FinalProjectNavigation"/>
 		</Unit>
 		<Unit filename="/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/CMakeLists.txt">

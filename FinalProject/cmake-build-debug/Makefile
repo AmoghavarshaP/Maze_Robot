@@ -197,6 +197,33 @@ src/API/api.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinalProjectNavigation.dir/build.make CMakeFiles/FinalProjectNavigation.dir/src/API/api.cpp.s
 .PHONY : src/API/api.cpp.s
 
+src/Algorithmn/algorithmn.o: src/Algorithmn/algorithmn.cpp.o
+
+.PHONY : src/Algorithmn/algorithmn.o
+
+# target to build an object file
+src/Algorithmn/algorithmn.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinalProjectNavigation.dir/build.make CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.o
+.PHONY : src/Algorithmn/algorithmn.cpp.o
+
+src/Algorithmn/algorithmn.i: src/Algorithmn/algorithmn.cpp.i
+
+.PHONY : src/Algorithmn/algorithmn.i
+
+# target to preprocess a source file
+src/Algorithmn/algorithmn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinalProjectNavigation.dir/build.make CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.i
+.PHONY : src/Algorithmn/algorithmn.cpp.i
+
+src/Algorithmn/algorithmn.s: src/Algorithmn/algorithmn.cpp.s
+
+.PHONY : src/Algorithmn/algorithmn.s
+
+# target to generate assembly for a file
+src/Algorithmn/algorithmn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinalProjectNavigation.dir/build.make CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.s
+.PHONY : src/Algorithmn/algorithmn.cpp.s
+
 src/LandBasedRobot/LandBasedRobot.o: src/LandBasedRobot/LandBasedRobot.cpp.o
 
 .PHONY : src/LandBasedRobot/LandBasedRobot.o
@@ -278,6 +305,33 @@ src/LandBasedWheeled/landbasedwheeled.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinalProjectNavigation.dir/build.make CMakeFiles/FinalProjectNavigation.dir/src/LandBasedWheeled/landbasedwheeled.cpp.s
 .PHONY : src/LandBasedWheeled/landbasedwheeled.cpp.s
 
+src/Maze/maze.o: src/Maze/maze.cpp.o
+
+.PHONY : src/Maze/maze.o
+
+# target to build an object file
+src/Maze/maze.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinalProjectNavigation.dir/build.make CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.o
+.PHONY : src/Maze/maze.cpp.o
+
+src/Maze/maze.i: src/Maze/maze.cpp.i
+
+.PHONY : src/Maze/maze.i
+
+# target to preprocess a source file
+src/Maze/maze.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinalProjectNavigation.dir/build.make CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.i
+.PHONY : src/Maze/maze.cpp.i
+
+src/Maze/maze.s: src/Maze/maze.cpp.s
+
+.PHONY : src/Maze/maze.s
+
+# target to generate assembly for a file
+src/Maze/maze.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinalProjectNavigation.dir/build.make CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.s
+.PHONY : src/Maze/maze.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -293,6 +347,9 @@ help:
 	@echo "... src/API/api.o"
 	@echo "... src/API/api.i"
 	@echo "... src/API/api.s"
+	@echo "... src/Algorithmn/algorithmn.o"
+	@echo "... src/Algorithmn/algorithmn.i"
+	@echo "... src/Algorithmn/algorithmn.s"
 	@echo "... src/LandBasedRobot/LandBasedRobot.o"
 	@echo "... src/LandBasedRobot/LandBasedRobot.i"
 	@echo "... src/LandBasedRobot/LandBasedRobot.s"
@@ -302,6 +359,9 @@ help:
 	@echo "... src/LandBasedWheeled/landbasedwheeled.o"
 	@echo "... src/LandBasedWheeled/landbasedwheeled.i"
 	@echo "... src/LandBasedWheeled/landbasedwheeled.s"
+	@echo "... src/Maze/maze.o"
+	@echo "... src/Maze/maze.i"
+	@echo "... src/Maze/maze.s"
 .PHONY : help
 
 

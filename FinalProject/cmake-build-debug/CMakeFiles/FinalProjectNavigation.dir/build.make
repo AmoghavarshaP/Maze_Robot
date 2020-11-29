@@ -142,13 +142,41 @@ CMakeFiles/FinalProjectNavigation.dir/src/API/api.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProjectNavigation.dir/src/API/api.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/API/api.cpp -o CMakeFiles/FinalProjectNavigation.dir/src/API/api.cpp.s
 
+CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.o: CMakeFiles/FinalProjectNavigation.dir/flags.make
+CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.o: ../src/Maze/maze.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.o -c /home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Maze/maze.cpp
+
+CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Maze/maze.cpp > CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.i
+
+CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Maze/maze.cpp -o CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.s
+
+CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.o: CMakeFiles/FinalProjectNavigation.dir/flags.make
+CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.o: ../src/Algorithmn/algorithmn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.o -c /home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Algorithmn/algorithmn.cpp
+
+CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Algorithmn/algorithmn.cpp > CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.i
+
+CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Algorithmn/algorithmn.cpp -o CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.s
+
 # Object files for target FinalProjectNavigation
 FinalProjectNavigation_OBJECTS = \
 "CMakeFiles/FinalProjectNavigation.dir/main.cpp.o" \
 "CMakeFiles/FinalProjectNavigation.dir/src/LandBasedRobot/LandBasedRobot.cpp.o" \
 "CMakeFiles/FinalProjectNavigation.dir/src/LandBasedTracked/landbasedtracked.cpp.o" \
 "CMakeFiles/FinalProjectNavigation.dir/src/LandBasedWheeled/landbasedwheeled.cpp.o" \
-"CMakeFiles/FinalProjectNavigation.dir/src/API/api.cpp.o"
+"CMakeFiles/FinalProjectNavigation.dir/src/API/api.cpp.o" \
+"CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.o" \
+"CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.o"
 
 # External object files for target FinalProjectNavigation
 FinalProjectNavigation_EXTERNAL_OBJECTS =
@@ -158,9 +186,11 @@ FinalProjectNavigation: CMakeFiles/FinalProjectNavigation.dir/src/LandBasedRobot
 FinalProjectNavigation: CMakeFiles/FinalProjectNavigation.dir/src/LandBasedTracked/landbasedtracked.cpp.o
 FinalProjectNavigation: CMakeFiles/FinalProjectNavigation.dir/src/LandBasedWheeled/landbasedwheeled.cpp.o
 FinalProjectNavigation: CMakeFiles/FinalProjectNavigation.dir/src/API/api.cpp.o
+FinalProjectNavigation: CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.o
+FinalProjectNavigation: CMakeFiles/FinalProjectNavigation.dir/src/Algorithmn/algorithmn.cpp.o
 FinalProjectNavigation: CMakeFiles/FinalProjectNavigation.dir/build.make
 FinalProjectNavigation: CMakeFiles/FinalProjectNavigation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable FinalProjectNavigation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable FinalProjectNavigation"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FinalProjectNavigation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
