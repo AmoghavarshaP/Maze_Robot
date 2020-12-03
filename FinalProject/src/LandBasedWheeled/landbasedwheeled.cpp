@@ -18,15 +18,15 @@
 // Method Definitions
 char fp::LandBasedWheeled::GetDirection() {
     std::cout << "GetDirection is called in LandBasedWheeled\n";
-    return (*this).direction_;
+    return direction_;
 }
 
 void fp::LandBasedWheeled::MoveForward(int x, int y, char direction) {
     std::cout << "MoveForward is called in LandBasedWheeled\n";
     fp::API::moveForward();
-    (*this).set_x_(x);
-    (*this).set_y_(y);
-    (*this).set_direction_(direction);
+    set_x_(x);
+    set_y_(y);
+    set_direction_(direction);
 }
 
 void fp::LandBasedWheeled::TurnLeft() {
@@ -49,11 +49,11 @@ void fp::LandBasedWheeled::Release(std::string string) {
 
 // Accessors
 int fp::LandBasedWheeled::getWheelNumber() const {
-    return (*this).wheel_number_;
+    return wheel_number_;
 }
 
 // Mutators
 void fp::LandBasedWheeled::setWheelNumber(int wheelNumber) {
-    (*this).wheel_number_ = wheelNumber;
+    wheel_number_ = wheelNumber;
 }
 

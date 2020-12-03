@@ -5,74 +5,74 @@
 #include "LandBasedRobot.h"
 
 void fp::LandBasedRobot::setName(const std::string name) {
-    (*this).name_ = name;
+    name_ = name;
 }
 
 void fp::LandBasedRobot::setSpeed(double speed) {
-    (*this).speed_ = speed;
+    speed_ = speed;
 }
 
 void fp::LandBasedRobot::setWidth(double width) {
-    (*this).width_ = width;
+    width_ = width;
 }
 
 void fp::LandBasedRobot::setLength(double length) {
-    (*this).length_ = length;
+    length_ = length;
 }
 
 void fp::LandBasedRobot::setHeight(double height) {
-    (*this).height_ = height;
+    height_ = height;
 }
 
 void fp::LandBasedRobot::setCapacity(double capacity) {
-    (*this).capacity_ = capacity;
+    capacity_ = capacity;
 }
 
 void fp::LandBasedRobot::set_x_(int x) {
-    (*this).x_ = x;
+    x_ = x;
 }
 
 void fp::LandBasedRobot::set_y_(int y) {
-    (*this).y_ = y;
+    y_ = y;
 }
 
 void fp::LandBasedRobot::set_direction_(char direction) {
-    (*this).direction_ = direction;
+    direction_ = direction;
 }
 
 // Define Getters
 const std::string &fp::LandBasedRobot::getName() const {
-    return (*this).name_;
+    return name_;
 }
 
 double fp::LandBasedRobot::getSpeed() const {
-    return (*this).speed_;
+    return speed_;
 }
 
 double fp::LandBasedRobot::getWidth() const {
-    return (*this).width_;
+    return width_;
 }
 
 double fp::LandBasedRobot::getLength() const {
-    return (*this).length_;
+    return length_;
 }
 
 double fp::LandBasedRobot::getHeight() const {
-    return (*this).height_;
+    return height_;
 }
 
 double fp::LandBasedRobot::getCapacity() const {
-    return (*this).capacity_;
+    return capacity_;
 }
 
 int fp::LandBasedRobot::get_x_() const {
-    return (*this).x_;
+    return x_;
 }
 
 int fp::LandBasedRobot::get_y_() const {
-    return (*this).y_;
+    return y_;
 }
 
 char fp::LandBasedRobot::get_direction_() const {
-    return (*this).direction_;
+    return direction_;
 }

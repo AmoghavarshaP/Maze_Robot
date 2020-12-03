@@ -19,15 +19,15 @@
 // Implementation of Methods
 char fp::LandBasedTracked::GetDirection() {
     std::cout << "GetDirection is called in LandBasedTracked \n";
-    return (*this).direction_;
+    return direction_;
 }
 
 void fp::LandBasedTracked::MoveForward(int x, int y, char direction) {
     std::cout << "MoveForward is called in LandBasedTracked \n";
     fp::API::moveForward();
-    (*this).set_x_(x);
-    (*this).set_y_(y);
-    (*this).set_direction_(direction);
+    set_x_(x);
+    set_y_(y);
+    set_direction_(direction);
 }
 
 void fp::LandBasedTracked::TurnLeft() {
