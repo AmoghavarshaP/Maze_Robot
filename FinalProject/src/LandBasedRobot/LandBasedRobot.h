@@ -25,9 +25,9 @@ namespace fp {
 
 //Methods
     public:
-        LandBasedRobot(): name_{},speed_ {}, width_ {}, length_ {}, height_ {}, capacity_ {},  x_ {10}, y_ {0}, direction_{'N'}{}
 
-        LandBasedRobot(std::string &name, double speed, double width, double length, double height, double capacity,
+
+        LandBasedRobot(std::string name, double speed, double width, double length, double height, double capacity,
                        int x, int y, char direction) :
                 name_{name}, speed_{speed}, width_{width}, length_{length}, height_{height}, capacity_{capacity}, x_{x},
                 y_{y}, direction_{direction} {}
@@ -37,36 +37,24 @@ namespace fp {
 
         // Method Prototypes
         virtual char GetDirection() = 0;
-        virtual void MoveForward(int x, int y, char direction) = 0;
+        virtual void MoveForward() = 0;
         virtual void TurnLeft() = 0;
         virtual void TurnRight() = 0;
         virtual void PickUp(std::string string) = 0;
         virtual void Release(std::string string) = 0;
+        virtual int get_x() const = 0;
+        virtual int get_y() const = 0;
 
-        // Mutators
-        virtual void setName(std::string name);
-        virtual void setSpeed(double speed);
-        virtual void setWidth(double width);
-        virtual void setLength(double length);
-        virtual void setHeight(double height);
-        virtual void setCapacity(double capacity);
-        virtual void set_x_(int x);
-        virtual void set_y_(int y);
-        virtual void set_direction_(char direction);
 
-        // Accessors
-        virtual const std::string &getName() const;
-        virtual double getSpeed() const;
-        virtual double getWidth() const;
-        virtual double getLength() const;
-        virtual double getHeight() const;
-        virtual double getCapacity() const;
-        virtual int get_x_() const;
-        virtual int get_y_() const;
-        virtual char get_direction_() const;
 
     };
 }
 
 
 #endif //FINALPROJECTNAVIGATION_LANDBASEDROBOT_H
+
+
+
+
+
+

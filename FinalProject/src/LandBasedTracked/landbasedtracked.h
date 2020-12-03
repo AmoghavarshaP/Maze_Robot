@@ -27,23 +27,29 @@ namespace fp {
     class LandBasedTracked : public LandBasedRobot{
     protected:
         // Attributes
-        std::shared_ptr<std::string> track_type_;/**Type of track mounted on the robot */
+        std::string track_type;/**Type of track mounted on the robot */
 
     public:
-        LandBasedTracked():LandBasedRobot(), track_type_{nullptr}{}
+
         // Constructor
-        LandBasedTracked(std::string name, double speed, double width, double length, double height, double capacity, int x, int y, char direction, std::shared_ptr<std::string> track_type):
-                LandBasedRobot(name, speed, width, length, height, capacity, x, y, direction), track_type_{std::move(track_type)}{ }
+        LandBasedTracked(std::string name, double speed, double width, double length, double height, double capacity, int x, int y, char direction, std::string track_type):
+                LandBasedRobot(name, speed, width, length, height, capacity, x, y, direction), track_type{track_type}{}
 
         // Destructor
-        ~LandBasedTracked()= default;
+        virtual ~LandBasedTracked(){}
 
         virtual char GetDirection() override;
-        virtual void MoveForward(int x, int y, char direction) override;
+        virtual void MoveForward() override;
         virtual void TurnLeft() override;
         virtual void TurnRight() override;
         virtual void PickUp(std::string string) override;
         virtual void Release(std::string string) override;
+        int get_x(){
+            return x_;
+        }
+        int get_y(){
+            return y_;
+        }
 
     };
 }

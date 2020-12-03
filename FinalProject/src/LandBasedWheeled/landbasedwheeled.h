@@ -31,16 +31,16 @@ namespace fp {
         //--Attributes
 
     protected:
-        int wheel_number_; /** Number of wheels mounted on the robot */
-        std::shared_ptr<std::string> wheel_type_; /** Type of wheels mounted on the robot */
+        int wheel_number; /** Number of wheels mounted on the robot */
+
 
     //--Methods
     public:
-        LandBasedWheeled():LandBasedRobot(), wheel_number_{}, wheel_type_{nullptr}{}
+
 
         // Constructor
-        LandBasedWheeled(std::string name, double speed, double width, double length, double height, double capacity, int x, int y, char direction, int wheel_number, std::shared_ptr<std::string> wheel_type):
-                LandBasedRobot(name, speed, width, length, height, capacity, x, y, direction), wheel_number_{wheel_number}, wheel_type_{std::move(wheel_type)}{}
+        LandBasedWheeled(std::string name, double speed, double width, double length, double height, double capacity, int x, int y, char direction, int wheel_number):
+                LandBasedRobot(name, speed, width, length, height, capacity, x, y, direction), wheel_number{wheel_number}{}
 
         // Destructor
         /**
@@ -49,19 +49,18 @@ namespace fp {
        * @param int x
        * @param int y
        */
-        ~LandBasedWheeled()= default;
-        virtual void MoveForward(int x, int y, char direction) override;
+        virtual ~LandBasedWheeled(){}
+        virtual void MoveForward() override;
         virtual char GetDirection() override;
         virtual void TurnLeft() override;
         virtual void TurnRight() override;
         virtual void PickUp(std::string string) override;
         virtual void Release(std::string string) override;
+        int get_x() const;
+        int get_y() const;
+        void SpeedUp(int);
 
-        // Accessors
-        int getWheelNumber() const;
 
-        // Mutators
-        void setWheelNumber(int wheelNumber);
 
     };
 }
