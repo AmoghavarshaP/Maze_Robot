@@ -86,11 +86,11 @@ void fp::LandBasedWheeled::Release(std::string string) {
 
 // Accessors
 int fp::LandBasedWheeled::getWheelNumber() const {
-    return wheel_number_;
+    return wheel_number;
 }
 
 // Mutators
-void fp::LandBasedWheeled::setWheelNumber(int wheelNumber) {
-    wheel_number_ = wheelNumber;
+int fp::LandBasedWheeled::setWheelNumber(int wheelNumber) {
+    wheel_number = wheelNumber;
 }
 

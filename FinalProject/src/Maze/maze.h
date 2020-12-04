@@ -5,10 +5,12 @@
 #ifndef FINALPROJECTNAVIGATION_MAZE_H
 #define FINALPROJECTNAVIGATION_MAZE_H
 
+namespace fp {
+    class maze {
 
-class maze {
 
-};
+    };
 
+}
 
 #endif //FINALPROJECTNAVIGATION_MAZE_H

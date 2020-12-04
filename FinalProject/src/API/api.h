@@ -1,9 +1,4 @@
-//
-// Created by amoghavarsha on 11/28/20.
-//
-
-#ifndef FINALPROJECTNAVIGATION_API_H
-#define FINALPROJECTNAVIGATION_API_H
+#pragma once // Ensure API is not "redefined"
 
 // Libraries to be included
 #include <string> // Enables the use of the string library for literal strings
@@ -17,6 +12,7 @@
  * from the API class. These methods can be found at https://github.com/mackorone/mms and have
  * been implemented in the function definitions below.
 */
+
 
 namespace fp {  // All functions/classes need to be in fp namespace
     class API { // Define API Class
@@ -123,6 +119,3 @@ namespace fp {  // All functions/classes need to be in fp namespace
         static void ackReset();//--reset simulation
     }; //--class API
 }//--namespace fp
-
-
-#endif //FINALPROJECTNAVIGATION_API_H

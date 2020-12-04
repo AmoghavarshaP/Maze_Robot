@@ -56,6 +56,8 @@ namespace fp {
         virtual void TurnRight() override;
         virtual void PickUp(std::string string) override;
         virtual void Release(std::string string) override;
+        int getWheelNumber() const;
+        int setWheelNumber(int wheel_number);
         int get_x() const;
         int get_y() const;
         void SpeedUp(int);

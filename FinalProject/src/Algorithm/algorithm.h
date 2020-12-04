@@ -6,7 +6,7 @@
 #define FINALPROJECTNAVIGATION_ALGORITHMN_H
 
 
-class algorithmn {
+class algorithm {
 
 };
 
