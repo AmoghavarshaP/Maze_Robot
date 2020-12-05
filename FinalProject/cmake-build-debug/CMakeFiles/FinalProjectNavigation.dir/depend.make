@@ -8,6 +8,10 @@ CMakeFiles/FinalProjectNavigation.dir/src/API/api.cpp.o: ../src/API/api.h
 
 CMakeFiles/FinalProjectNavigation.dir/src/Algorithm/algorithm.cpp.o: ../src/Algorithm/algorithm.cpp
 CMakeFiles/FinalProjectNavigation.dir/src/Algorithm/algorithm.cpp.o: ../src/Algorithm/algorithm.h
+CMakeFiles/FinalProjectNavigation.dir/src/Algorithm/algorithm.cpp.o: ../src/LandBasedRobot/LandBasedRobot.h
+CMakeFiles/FinalProjectNavigation.dir/src/Algorithm/algorithm.cpp.o: ../src/LandBasedTracked/landbasedtracked.h
+CMakeFiles/FinalProjectNavigation.dir/src/Algorithm/algorithm.cpp.o: ../src/LandBasedWheeled/landbasedwheeled.h
+CMakeFiles/FinalProjectNavigation.dir/src/Algorithm/algorithm.cpp.o: ../src/Maze/maze.h
 
 CMakeFiles/FinalProjectNavigation.dir/src/LandBasedRobot/LandBasedRobot.cpp.o: ../src/LandBasedRobot/LandBasedRobot.cpp
 CMakeFiles/FinalProjectNavigation.dir/src/LandBasedRobot/LandBasedRobot.cpp.o: ../src/LandBasedRobot/LandBasedRobot.h
