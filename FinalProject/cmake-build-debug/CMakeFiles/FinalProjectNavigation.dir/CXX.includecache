@@ -6,7 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/main.cpp
+/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/API/api.h
+string
+-
+
+/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Algorithm/algorithm.cpp
+algorithm.h
+/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Algorithm/algorithm.h
+
+/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Algorithm/algorithm.h
+
+/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Maze/maze.cpp
+maze.h
+/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Maze/maze.h
+../API/api.h
+/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/API/api.h
+
+/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Maze/maze.h
 iostream
 -
 

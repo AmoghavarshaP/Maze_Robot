@@ -12,10 +12,7 @@
 *
 */
 
-
-#ifndef FINALPROJECTNAVIGATION_LANDBASEDWHEELED_H
-#define FINALPROJECTNAVIGATION_LANDBASEDWHEELED_H
-
+#pragma once
 
 #include <iostream>
 #include <memory>
@@ -67,5 +64,5 @@ namespace fp {
     };
 }
 
-#endif //FINALPROJECTNAVIGATION_LANDBASEDWHEELED_
+
 

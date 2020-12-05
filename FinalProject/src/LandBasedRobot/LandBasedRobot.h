@@ -2,8 +2,8 @@
 // Created by amoghavarsha on 11/28/20.
 //
 
-#ifndef FINALPROJECTNAVIGATION_LANDBASEDROBOT_H
-#define FINALPROJECTNAVIGATION_LANDBASEDROBOT_H
+#pragma once
+
 
 
 #include <iostream>
@@ -50,8 +50,6 @@ namespace fp {
     };
 }
 
-
-#endif //FINALPROJECTNAVIGATION_LANDBASEDROBOT_H
 
 
 

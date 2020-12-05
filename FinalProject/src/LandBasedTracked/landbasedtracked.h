@@ -11,9 +11,7 @@
 * Implementing the land based tracked class
 *
 */
-#ifndef FINALPROJECTNAVIGATION_LANDBASEDTRACKED_H
-#define FINALPROJECTNAVIGATION_LANDBASEDTRACKED_H
-
+#pragma once
 
 #include<iostream>
 #include<memory>
@@ -54,4 +52,4 @@ namespace fp {
     };
 }
 
-#endif //FINALPROJECTNAVIGATION_LANDBASEDTRACKED_H
+

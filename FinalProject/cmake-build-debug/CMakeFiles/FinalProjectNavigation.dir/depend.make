@@ -22,6 +22,7 @@ CMakeFiles/FinalProjectNavigation.dir/src/LandBasedWheeled/landbasedwheeled.cpp.
 CMakeFiles/FinalProjectNavigation.dir/src/LandBasedWheeled/landbasedwheeled.cpp.o: ../src/LandBasedWheeled/landbasedwheeled.cpp
 CMakeFiles/FinalProjectNavigation.dir/src/LandBasedWheeled/landbasedwheeled.cpp.o: ../src/LandBasedWheeled/landbasedwheeled.h
 
+CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.o: ../src/API/api.h
 CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.o: ../src/Maze/maze.cpp
 CMakeFiles/FinalProjectNavigation.dir/src/Maze/maze.cpp.o: ../src/Maze/maze.h
 
