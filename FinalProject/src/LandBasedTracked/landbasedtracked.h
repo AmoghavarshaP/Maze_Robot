@@ -30,7 +30,7 @@ namespace fp {
     public:
 
         // Constructor
-        LandBasedTracked(std::string name, double speed, double width, double length, double height, double capacity, int x, int y, char direction, std::string track_type):
+        LandBasedTracked(std::string name="Prateek", double speed=0, double width=0, double length=0, double height=0, double capacity=0, int x=0, int y=0, char direction='g', std::string track_type="flat"):
                 LandBasedRobot(name, speed, width, length, height, capacity, x, y, direction), track_type{track_type}{}
 
         // Destructor

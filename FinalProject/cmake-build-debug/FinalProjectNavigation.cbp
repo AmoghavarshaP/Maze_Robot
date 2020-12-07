@@ -93,10 +93,10 @@
 		<Unit filename="/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/API/api.h">
 			<Option target="FinalProjectNavigation"/>
 		</Unit>
-		<Unit filename="/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Algorithmn/algorithmn.cpp">
+		<Unit filename="/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Algorithm/algorithm.cpp">
 			<Option target="FinalProjectNavigation"/>
 		</Unit>
-		<Unit filename="/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Algorithmn/algorithmn.h">
+		<Unit filename="/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/Algorithm/algorithm.h">
 			<Option target="FinalProjectNavigation"/>
 		</Unit>
 		<Unit filename="/home/amoghavarsha/Desktop/FinalProject809Y/FinalProject/src/LandBasedRobot/LandBasedRobot.cpp">

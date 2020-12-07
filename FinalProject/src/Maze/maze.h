@@ -34,14 +34,13 @@ namespace fp {
 
         bool isWallWest(int x,int y);
 
-        ~Maze();
+        ~Maze(){};
 
     protected:
-        std::array<std::array<int,16>,16> SouthWall;
-        std::array<std::array<int,16>,16> EastWall;
-        std::array<std::array<int,16>,16> NorthWall;
-        std::array<std::array<int,16>,16> WestWall;
-
+        int SouthWall[16][16];
+        int EastWall[16][16];
+        int NorthWall[16][16];
+        int WestWall[16][16];
 
 
 

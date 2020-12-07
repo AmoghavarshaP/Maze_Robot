@@ -19,28 +19,39 @@
 #include "../LandBasedTracked/landbasedtracked.h"
 #include "../LandBasedWheeled/landbasedwheeled.h"
 #include "../Maze/maze.h"
+#include <map>
 
 
 
 namespace fp {
-    class Algorithm {
+    class Algorithm{
     public:
-        bool CheckGoal(int x,int y);
 
-        void SolveDFS(std::shared_ptr<fp::LandBasedRobot> robot);
+        Algorithm(){
+            row =0;
+            col =0;
+            dir ='N';
+            visited = {0};
+            visited[col][row]=true;
+            rows.push(row);
+            columns.push(col);
+        }
 
-        void MoveRobot(std::shared_ptr<fp::LandBasedRobot> robot, int x, int y, char direction);
+    public:
+        bool CheckGoal(int x, int y);
+
+        void MoveRobot(std::shared_ptr<fp::LandBasedRobot>, int col, int row );
+
+        bool solve(std::shared_ptr<fp::LandBasedRobot>);
 
     private:
-        std::stack<int> rows;
-        std::stack<int> cols;
-
-
-
-
-
-
-
+        fp::Maze maze;
+        int row;
+        int col;
+        char dir;
+        std::stack<int>rows;
+        std::stack<int>columns;
+        std::array<std::array<int,16>,16>visited;
 
     };
 

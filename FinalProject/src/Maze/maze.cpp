@@ -16,17 +16,17 @@
 #include "../API/api.h"
 
 fp::Maze::Maze() {
-    fp::API::setColor(0,0,'r');
+    fp::API::setColor(0,0,'R');
     fp::API::setText(0,0,"Start");
     fp::API::setText(7,7,"Goal");
     fp::API::setText(7,8,"Goal");
     fp::API::setText(8,7,"Goal");
     fp::API::setText(8,8,"Goal");
 
-    fp::API::setColor(7,7,'g');
-    fp::API::setColor(7,8,'g');
-    fp::API::setColor(8,7,'g');
-    fp::API::setColor(8,8,'g');
+    fp::API::setColor(7,7,'G');
+    fp::API::setColor(7,8,'G');
+    fp::API::setColor(8,7,'G');
+    fp::API::setColor(8,8,'G');
 
     //-- Setting the entire maze without walls to be updated as the robot moves
     for (int x = 0; x<16;x++){

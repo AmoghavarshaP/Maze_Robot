@@ -36,7 +36,7 @@ namespace fp {
 
 
         // Constructor
-        LandBasedWheeled(std::string name, double speed, double width, double length, double height, double capacity, int x, int y, char direction, int wheel_number):
+        LandBasedWheeled(std::string name="Micro", double speed=0, double width=0, double length=0, double height=0, double capacity=0, int x=0, int y=0, char direction='g', int wheel_number=2):
                 LandBasedRobot(name, speed, width, length, height, capacity, x, y, direction), wheel_number{wheel_number}{}
 
         // Destructor
