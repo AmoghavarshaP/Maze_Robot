@@ -1,15 +1,14 @@
-/**
-* @file landbasedwheeled.h
-* @authors
+/** @file landbasedwheeled.h
 * Group 4
-* Prateek Bhargava, UID : 116947992
-* Amoghavarsha Prasanna, UID : 116952910
+* @authors
+* Prateek Bhargava : UID - 116947992
+* Amoghavarsha Prasanna : UID - 116952910
 *
 * @version 1.0
 *
 * @section File Description
-* Implementing the land based wheeled class
-*
+* This is a header file for the concrete class which inherits the base class
+* LandBasedRobot. Then the attributes and method prototypes are declared.
 */
 
 #pragma once
@@ -33,8 +32,20 @@ namespace fp {
 
     //--Methods
     public:
-
-
+            /**
+			* @brief Constructor of the class: LandBasedWheeled, containing 10 parameters
+			* @param name
+			* @param speed
+			* @param width
+			* @param length
+			* @param height
+			* @param capacity
+			* @param x
+			* @param y
+			* @param direction
+            * @param wheel_
+			* @return none
+			*/
         // Constructor
         LandBasedWheeled(std::string name="Micro", double speed=0, double width=0, double length=0, double height=0, double capacity=0, int x=0, int y=0, char direction='g', int wheel_number=2):
                 LandBasedRobot(name, speed, width, length, height, capacity, x, y, direction), wheel_number{wheel_number}{}
@@ -42,21 +53,42 @@ namespace fp {
         // Destructor
         /**
        * @brief Destructor of the class LandBasedWheeled which deletes the objects created before
-       * @param string name
-       * @param int x
-       * @param int y
+       * @param none
+       * @return none
        */
         virtual ~LandBasedWheeled(){}
+
         virtual void MoveForward() override;
         virtual char GetDirection() override;
         virtual void TurnLeft() override;
         virtual void TurnRight() override;
         virtual void PickUp(std::string string) override;
         virtual void Release(std::string string) override;
+
+        /**
+        * @brief It is a getter of the class: LandBasedTracked
+        * Used to obtain the wheel number of the robot.
+        * @param none
+        * @return none
+        */
         int getWheelNumber() const;
+
+        /**
+        * @brief It is a setter of the class: LandBasedTracked
+        * Used to set the wheel number of the robot.
+        * @param wheel number
+        * @return none
+        */
         int setWheelNumber(int wheel_number);
         int get_x() const;
         int get_y() const;
+
+        /**
+         * @brief Virtual is a member function of class: LandBasedTracked.
+         * Used to change the speed of the robot.
+         * @param speed
+         * @return none
+         */
         void SpeedUp(int);
 
 
