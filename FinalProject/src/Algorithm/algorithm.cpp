@@ -23,11 +23,10 @@ bool fp::Algorithm::CheckGoal(int x, int y) {
     if ((x==7 && y==7) || (x==7 && y==8) || (x==8 && y==7) || (x==8 && y==8))
         return true;
     else
-//        std::cerr<<"Path not found"<<std::endl;
         return false;
 }
-
-bool fp::Algorithm::solve(std::shared_ptr<fp::LandBasedRobot> robot){
+//-- Recursive Algorithm to solve the maze to find the path
+bool fp::Algorithm::Solve(std::shared_ptr<fp::LandBasedRobot> const& robot){
 
     if(fp::Algorithm::CheckGoal(col, row)){
         while (!rows.empty()){
@@ -39,43 +38,42 @@ bool fp::Algorithm::solve(std::shared_ptr<fp::LandBasedRobot> robot){
         return true;
     }
 
-    maze.mazeUpdate(col,row,dir);
+    maze.mazeUpdate(col,row,dir); //--Updates maze as walls are encountered by the robot
 
-
-    // Check South Direction
-    if((row>0)&&(maze.isWallSouth(col,row) == false)&&(visited[col][row-1]==false)){
+    //--South:
+    if((row>0) && !maze.isWallSouth(col, row) && (visited[col][row - 1] == false)){
         rows.push(row-1);columns.push(col);
         fp::Algorithm::MoveRobot(robot,col,row-1);
         visited[col][row-1]=true;
         row=row-1; dir='S';
-        fp::Algorithm::solve(robot);
+        fp::Algorithm::Solve(robot);
     }
 
-        // Check East Direction.
-    else if((col<15)&&(maze.isWallEast(col, row) == false)&&(visited[col+1][row]==false)){
+    //--East:
+    else if((col<15) && !maze.isWallEast(col, row) && (visited[col + 1][row] == false)){
         rows.push(row);columns.push(col+1);
         fp::Algorithm::MoveRobot(robot,col+1,row);
         visited[col+1][row]=true;
         col=col+1;dir='E';
-        fp::Algorithm::solve(robot);
+        fp::Algorithm::Solve(robot);
     }
-        // Check North Direction.
-    else if((row<15)&&(maze.isWallNorth(col, row) == false)&&(visited[col][row+1]==false)){
+    //--North:
+    else if((row<15) && !maze.isWallNorth(col, row) && (visited[col][row + 1] == false)){
         rows.push(row+1);columns.push(col);
         fp::Algorithm::MoveRobot(robot,col,row+1);
         visited[col][row+1]=true;
         row=row+1;dir='N';
-        fp::Algorithm::solve(robot);
+        fp::Algorithm::Solve(robot);
     }
-        // Check West Direction.
-    else if((col>0)&&(maze.isWallWest(col, row) == false)&&(visited[col-1][row]==false)){
+    //--West:
+    else if((col>0) && !maze.isWallWest(col, row) && (visited[col - 1][row] == false)){
         rows.push(row);columns.push(col-1);
         fp::Algorithm::MoveRobot(robot,col-1,row);
         visited[col-1][row]=true;
         col=col-1;dir='W';
-        fp::Algorithm::solve(robot);
+        fp::Algorithm::Solve(robot);
     }
-        // Clear and update the robot coordinates.
+    //--Update robot coordinates
     else{
         rows.pop();
         columns.pop();
@@ -83,7 +81,7 @@ bool fp::Algorithm::solve(std::shared_ptr<fp::LandBasedRobot> robot){
         row=rows.top();
         col=columns.top();
         dir=robot->GetDirection();
-        fp::Algorithm::solve(robot);
+        fp::Algorithm::Solve(robot);
     }
 }
 
@@ -94,32 +92,31 @@ void fp::Algorithm::MoveRobot(std::shared_ptr<fp::LandBasedRobot> robot,int col,
     int current_x=robot->get_x();
     int current_y=robot->get_y();
     int current_dir=robot->GetDirection();
-//	fp::API::setColor(robot->get_x(),robot->get_y(),'Y');
     if(!((current_y==row)&&(current_x==col))){
-        //Movement in South Direction.
+       //--First Movement check alongSouth:
         if(row<current_y){
             if(current_dir=='S'){
                 robot->MoveForward();
                 std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
             }
-            if(current_dir=='W')
-            {  robot->TurnLeft();
+            if(current_dir=='W'){
+                robot->TurnLeft();
                 robot->MoveForward();
                 std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
             }
-            if(current_dir=='E')
-            {  robot->TurnRight();
+            if(current_dir=='E'){
+                robot->TurnRight();
                 robot->MoveForward();
                 std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
             }
-            if(current_dir=='N')
-            {  robot->TurnRight();
+            if(current_dir=='N'){
+                robot->TurnRight();
                 robot->TurnRight();
                 robot->MoveForward();
                 std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
             }
         }
-        //Movement in East Direction.
+        //--Second Movement check along East:
         if(col>current_x){
             if(current_dir=='E'){
                 robot->MoveForward();
@@ -142,7 +139,7 @@ void fp::Algorithm::MoveRobot(std::shared_ptr<fp::LandBasedRobot> robot,int col,
                 std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
             }
         }
-        //--North Movement
+        //--Third Movement check along North:
         if(row>current_y){
             if(current_dir=='N'){
                 robot->MoveForward();
@@ -165,7 +162,7 @@ void fp::Algorithm::MoveRobot(std::shared_ptr<fp::LandBasedRobot> robot,int col,
                 std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
             }
         }
-        //Movement in West Direction.
+        //--Fourth Movement check along West.
         if(col<current_x){
             if(current_dir=='W'){
                 robot->MoveForward();

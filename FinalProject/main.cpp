@@ -26,7 +26,7 @@ int main() {
     auto start = std::chrono::high_resolution_clock::now();
     std::shared_ptr<fp::LandBasedRobot> MicroMouse = std::make_shared<fp::LandBasedWheeled>("Husky",1,5,10,10,0,0,0,'N');
     fp::Algorithm Algory;
-    Algory.solve(MicroMouse);
+    Algory.Solve(MicroMouse);
     std::cerr << "Goal Reached" << std::endl;
     auto stop = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);

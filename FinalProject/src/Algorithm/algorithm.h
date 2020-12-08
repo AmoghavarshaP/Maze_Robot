@@ -26,33 +26,50 @@
 namespace fp {
     class Algorithm{
     public:
-
+        /**
+         * @brief Algorithm Constructor that is used to initialize the attributes for the algorithm
+         */
         Algorithm(){
             row =0;
             col =0;
             dir ='N';
-            visited = {0};
             visited[col][row]=true;
             rows.push(row);
             columns.push(col);
         }
 
-    public:
-        bool CheckGoal(int x, int y);
-
-        void MoveRobot(std::shared_ptr<fp::LandBasedRobot>, int col, int row );
-
-        bool solve(std::shared_ptr<fp::LandBasedRobot>);
-
     private:
         fp::Maze maze;
-        int row;
-        int col;
+        int col; //-- x co-ordinate
+        int row; //-- y co-ordinate
         char dir;
+        //-- stacks to keep track of visited positions for backtracking to find path.
         std::stack<int>rows;
         std::stack<int>columns;
-        std::array<std::array<int,16>,16>visited;
+        int visited[16][16]={0}; //-- To keep track of visited cells
 
+
+    public:
+        /**
+         * @brief Algorithm method used to check if goal is reached
+         * @param x x:co-ordinate position of the robot
+         * @param y y:co-ordinate position of the robot
+         * @return returns true if goal is found
+         */
+        bool CheckGoal(int x, int y);
+
+        /**
+         * @brief Algorithm method used move the robot in the maze
+         * @param col x:co-ordinate position in the maze cell
+         * @param row y: x:co-ordinate position in the maze cell
+         */
+        void MoveRobot(std::shared_ptr<fp::LandBasedRobot>, int col, int row );
+
+        /**
+         * @brief Algorithm method that solves the maze algorithm recursively
+         * @return returns true if the goal is reached by the robot
+         */
+        bool Solve(std::shared_ptr<fp::LandBasedRobot>const& robot);
     };
 
 }
