@@ -2,18 +2,19 @@
 ## ENPM809Y Final Project: Group 4
 
 ### Instructions to run the code on Ubuntu 
-Steps to install mms:
+Steps to install mms simulator:
 Run the following code in sequence provided below:
-'''
-sudo apt-get install qt5-default 
-
+```
+# Clone the repo
 git clone git@github.com:mackorone/mms.git
 
+# Build the simulator
 cd mms/src
 qmake && make
 
+# Run the simulator
 ../../bin/mms
-'''
+```
 Further detailed instructions and further information about the mms simulator can be found here  " https://github.com/mackorone/mms "
 
 Once MMS is installed, select a maze and open the Edit Mouse Algorithm pop-up to put in the commands as follows:
