@@ -1,4 +1,4 @@
-# Maze_Robot
+# Maze_Robot_Navigation
 ## ENPM809Y Final Project: Group 4
 
 ### Instructions to run the code on Ubuntu 
