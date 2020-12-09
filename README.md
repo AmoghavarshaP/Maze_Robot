@@ -33,7 +33,7 @@ press OK.
 
 An example: 
 
-![Screenshot from 2020-12-09 02-32-58](https://user-images.githubusercontent.com/60764108/101598995-fdd78580-39c6-11eb-9092-beaefc147fe2.png)
+![Screenshot from 2020-12-09 03-37-10](https://user-images.githubusercontent.com/60764108/101605196-e5b83400-39cf-11eb-8450-551aef37311b.png)
 
 Hit Build. Once it shows COMPLETE in the adjoining box, Hit Run. The robot will move in the maze till it finds and reaches the goal node.
 
