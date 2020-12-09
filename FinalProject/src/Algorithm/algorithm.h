@@ -61,7 +61,7 @@ namespace fp {
         /**
          * @brief Algorithm method used move the robot in the maze
          * @param col x:co-ordinate position in the maze cell
-         * @param row y: x:co-ordinate position in the maze cell
+         * @param row y:co-ordinate position in the maze cell
          */
         void MoveRobot(std::shared_ptr<fp::LandBasedRobot>, int col, int row );
 

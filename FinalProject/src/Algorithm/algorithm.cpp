@@ -93,96 +93,96 @@ void fp::Algorithm::MoveRobot(std::shared_ptr<fp::LandBasedRobot> robot,int col,
     int current_y=robot->get_y();
     int current_dir=robot->GetDirection();
     if(!((current_y==row)&&(current_x==col))){
-       //--First Movement check alongSouth:
+       //--First Movement check along South:
         if(row<current_y){
             if(current_dir=='S'){
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
             if(current_dir=='W'){
                 robot->TurnLeft();
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
             if(current_dir=='E'){
                 robot->TurnRight();
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
             if(current_dir=='N'){
                 robot->TurnRight();
                 robot->TurnRight();
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
         }
         //--Second Movement check along East:
         if(col>current_x){
             if(current_dir=='E'){
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
             if(current_dir=='S'){
                 robot->TurnLeft();
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
             if(current_dir=='N'){
                 robot->TurnRight();
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
             if(current_dir=='W'){
                 robot->TurnRight();
                 robot->TurnRight();
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
         }
         //--Third Movement check along North:
         if(row>current_y){
             if(current_dir=='N'){
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
             if(current_dir=='E'){
                 robot->TurnLeft();
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
             if(current_dir=='W'){
                 robot->TurnRight();
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
             if(current_dir=='S'){
                 robot->TurnRight();
                 robot->TurnRight();
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
         }
         //--Fourth Movement check along West.
         if(col<current_x){
             if(current_dir=='W'){
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
             if(current_dir=='N'){
                 robot->TurnLeft();
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
             if(current_dir=='S'){
                 robot->TurnRight();
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
             if(current_dir=='E'){
                 robot->TurnLeft();
                 robot->TurnLeft();
                 robot->MoveForward();
-                std::cerr<<" X position: "<< robot->get_x() << " Y position: "<< robot->get_y() << std::endl;
+                std::cerr<<" x position: "<< robot->get_x() << " y position: "<< robot->get_y() << std::endl;
             }
         }
     }

@@ -8,8 +8,9 @@
 * @version 1.0
 *
 * @section File Description
-* main file
-*
+*Implementation of the movement of a robot in maze.This program uses the
+*MicroMouse simulator for real-time visualization of the movement of the robot
+*in a maze. This project was developed using various C++ concepts of Object Oriented Programming(OOPS)
 */
 
 
