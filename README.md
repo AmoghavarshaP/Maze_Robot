@@ -17,20 +17,24 @@ qmake && make
 ```
 Further detailed instructions and further information about the mms simulator can be found here  " https://github.com/mackorone/mms "
 
-Once MMS is installed, select a maze and open the Edit Mouse Algorithm pop-up to put in the commands as follows:
+After running the mms simulator, open the Edit-Mouse Algorithm pop-up, which the can be accesed from the top right corner of the simulator interface. 
 
-Name: Input your Desired Name.
+The fiels provided should be filled as follows:
 
-Directory: /home/user_name/Final-Project-Group6 (You can also browse to the Final-Project-Group6 folder using the browse pop up next to the directory space).
+Name: Input any desired name
 
-Build Command: g++ -std=c++11 main.cpp src/Algorithm/algorithm.cpp src/Maze/maze.cpp src/API/api.cpp src/LandBasedTracked/landbasedtracked.cpp src/LandBasedWheeled/landbasedwheeled.cpp
+Directory: /home/user_name/Final-Project-Group4/src. -- Directly browse to this directory. 
+
+Build Command: ``` g++ API/api.cpp LandBasedRobot/landbasedrobot.cpp  LandBasedTracked/landbasedtracked.cpp LandBasedWheeled/landbasedwheeled.cpp Maze/maze.cpp Algorithm/algorithm.cpp ../main.cpp ```
 
 Run Command: ./a.out
 
-user_name in the directory above should be your username for Ubuntu.
+press OK.
 
-Once you fill in these details, press OK.
+An example: 
 
-Hit Build. Once it shows COMPLETE in the adjoining box, Hit Run. The robot should search for the path and follow it.
+![Screenshot from 2020-12-09 02-32-58](https://user-images.githubusercontent.com/60764108/101598995-fdd78580-39c6-11eb-9092-beaefc147fe2.png)
 
-You don't have to build the code again to run it for a different maze. Once the build is complete, you can run the code for multiple mazes, by changing the Maze config and hitting Run.
+Hit Build. Once it shows COMPLETE in the adjoining box, Hit Run. The robot will move in the maze till it finds and reaches the goal node.
+
+Once the build is complete, you can run the code for multiple mazes, by changing the Maze config and hitting Run.
