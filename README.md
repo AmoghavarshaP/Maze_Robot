@@ -5,17 +5,13 @@
 Steps to install mms:
 Run the following code in sequence provided below:
 '''
-# Install the simulator
 sudo apt-get install qt5-default 
 
-# Clone the repo
 git clone git@github.com:mackorone/mms.git
 
-# Build the simulator
 cd mms/src
 qmake && make
 
-# Run the simulator
 ../../bin/mms
 '''
 Further detailed instructions and further information about the mms simulator can be found here  " https://github.com/mackorone/mms "
